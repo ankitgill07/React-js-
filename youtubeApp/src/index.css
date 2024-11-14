@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-scrollbar{
+    @apply overflow-auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff  #ffffff;
+ }
+
+
+  .custom-scrollbar:hover {
+    scrollbar-color: #909090  #ffffff;
+  }
+
+  .dark .custom-scrollbar {
+    scrollbar-color: #0F0F0F #0F0F0F /* Darker color for dark mode */
+}
+
+.dark .custom-scrollbar:hover {
+    scrollbar-color: #888888 #0F0F0F; /* Lighter color on hover in dark mode */
+}
+
+
+  .dynamic-shadow {
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px var(--shadow-color);
+  }
+
+  
+
+
+  * {
+    scrollbar-color: #909090 transparent; /* Thumb color, Track color */
+}
